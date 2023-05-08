@@ -67,6 +67,21 @@ button {
     width: 20px;
     border-radius: 50%;
     background-color: #fff;
+    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
+}
+.section-heading {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+    margin-top: 15px;
+}
+.section-desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+    margin-top: 24px;
 }
 /* Header */
 .header {
@@ -247,4 +262,116 @@ button {
 }
 .hero__cta-link:hover {
     text-decoration: underline;
+}
+/* About */
+.about {
+    margin-top: 138px;
+}
+.about__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.about__label {
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+.about__heading,
+.about__desc {
+    width: 444px;
+}
+.about__checklist {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    margin-top: 54px;
+    gap: 36px;
+}
+.about__check-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496a;
+}
+.about__check-item::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: #ff5d31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+.about__check-item::after {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    content: url(../images/Icons/check.svg);
+}
+.about__media {
+    position: relative;
+}
+.about__card {
+    position: absolute;
+    left: 0;
+    top: 165px;
+    padding: 30px 26px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+    width: 136px;
+}
+.about__card-title {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+}
+.about__card-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    text-align: center;
+    color: #c6f4f9;
+    margin-top: 14px;
+}
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    right: -32px;
+}
+.about__img-wrap {
+    margin-left: auto;
+    position: relative;
+    width: 494px;
+}
+.about__img-wrap::after {
+    z-index: -1;
+    height: 336px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+}
+.about__img {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+}
+.about__meida-decor {
+    position: absolute;
+    z-index: -1;
+    top: 157px;
+    right: -50px;
 }
